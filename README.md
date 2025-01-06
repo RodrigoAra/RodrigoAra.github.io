@@ -1,1 +1,1 @@
-# sass-bootstrap-template
+# bootstrap-template
