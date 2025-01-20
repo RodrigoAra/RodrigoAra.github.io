@@ -16,3 +16,16 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+input::placeholder {
+    color: white !important;
+}
+
+input::content {
+	color: white !important;
+}
+
+.custom {
+    width: 120.23px !important;
+}
+

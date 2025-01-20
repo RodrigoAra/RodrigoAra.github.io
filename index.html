@@ -18,13 +18,27 @@
 				<button data-bs-toggle="button" class="btn btn-outline-light mt-2" aria-current="page"><i class="bi bi-radioactive"></i> Plague Inc.</button>
 				<button data-bs-toggle="button" class="btn btn-outline-light mt-2" aria-current="page"><i class="bi bi-train-freight-front"></i> Ticket to Ride</button>	
 			</div>
+			<div class="collapse" id="collapseExample">
+				<div class="input-group mt-3">
+					<input type="text" class="form-control bg-transparent" placeholder="Name" aria-label="Name">
+					<input type="text" class="form-control bg-transparent" placeholder="Room ID" aria-label="Room ID">
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<div class="d-flex flex-column align-items-center">			
+						<div class="btn-group mt-2" role="group">
+							<button type="button" class="btn btn-outline-light custom">Join Room</button>
+							<button type="button" class="btn btn-outline-light">Create Room</button>
+						</div>
+					</div>
+				</div>				
+			</div>			
 		</div>
 	</div>
 	<script type="text/javascript">
 		$('.btn-group-vertical').on('click', '.btn', function() {
 			$(this).addClass('active').siblings().removeClass('active');
+			$('.collapse').collapse({toggle: false});
 		});
 	</script>
-
 	
 </html>
