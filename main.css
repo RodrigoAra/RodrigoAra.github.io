@@ -22,7 +22,7 @@ input::placeholder {
 }
 
 input::content {
-	color: white !important;
+    color: white !important;
 }
 
 .custom {
