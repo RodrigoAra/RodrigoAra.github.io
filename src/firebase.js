@@ -1,4 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import { getAuth, onAuthStateChanged, signInAnonymously } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDIyuPRVnNheD_PyELyQceaLF1hLa6bkC0",
@@ -11,4 +12,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-export default app; 
+const auth = getAuth();
+
+export { app , auth, onAuthStateChanged, signInAnonymously }; 
