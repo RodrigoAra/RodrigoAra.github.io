@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signInAnonymously } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
-import { getDatabase, ref } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js' ; 
+import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js' ; 
 
 
 const firebaseConfig = {
@@ -17,4 +17,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getDatabase(app);
 
-export { app , auth, db, onAuthStateChanged, signInAnonymously, ref }; 
+export { app , auth, db, onAuthStateChanged, signInAnonymously, ref, set }; 
