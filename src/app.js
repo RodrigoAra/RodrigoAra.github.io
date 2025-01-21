@@ -1,3 +1,6 @@
+import app from './firebase.js'; 
+
+console.log('Firebase App:', app); 
 // Helpers
 function randomDiceRoll(numOfDice) {
     min = numOfDice
