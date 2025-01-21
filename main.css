@@ -21,8 +21,8 @@ input::placeholder {
     color: white !important;
 }
 
-input::content {
-	color: white !important;
+form, input, label, p {
+    color: white !important;
 }
 
 .custom {
