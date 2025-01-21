@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signInAnonymously } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js';
-import { getDatabase, ref } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js'; 
+import { getDatabase, ref } from 'https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js' ; 
 
 
 const firebaseConfig = {
