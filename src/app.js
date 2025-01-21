@@ -42,28 +42,4 @@ function randomDiceRoll(numOfDice) {
 			console.log('Error signing in anonymously:', errorCode, errorMessage);
 		});
 
-
-	// app.auth().onAuthStateChanged((user) => {
-	//     console.log(user);
-	//     if (user) {
-	//         // logged in!
-	//         playerId = user.uid;
-	//         playerRef = app.database().ref(`players/${playerId}`);
-
-	//         playerRef.set({
-	//             id: playerId,
-	//             name: "Test",
-	//             color: "Blue",
-	//         })
-	//     } else {
-	//         // logged out
-	//     }
-	// });
-
-	// app.auth().signInAnonymously().catch((error) => {
-	// 	var errorCode = error.code;
-	// 	var errorMessage = error.message;
-	// 	console.log(errorCode, errorMessage);
-	// });
-
 })();
