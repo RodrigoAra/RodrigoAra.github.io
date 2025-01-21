@@ -1,4 +1,4 @@
-import { app , auth, db, onAuthStateChanged, signInAnonymously } from './firebase.js';
+import { app , auth, db, onAuthStateChanged, signInAnonymously, ref } from './firebase.js';
 
 console.log('Firebase App:', app); 
 // Helpers
@@ -17,7 +17,7 @@ function randomDiceRoll(numOfDice) {
 		console.log(user);
 		if (user) {
 			playerId = user.uid;
-			playerRef = db.ref(`players/${playerId}`);
+			playerRef = ref(db, `players/${playerId}`);
 
 			playerRef.set({
 				id: playerId,
