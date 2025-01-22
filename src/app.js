@@ -1,4 +1,4 @@
-import { app , auth, db, onAuthStateChanged, signInAnonymously, ref, set } from './firebase.js';
+import { app , auth, db, onAuthStateChanged, signInAnonymously, ref, set, onDisconnect } from './firebase.js';
 
 console.log('Firebase App:', app); 
 // Helpers
@@ -24,6 +24,7 @@ function randomDiceRoll(numOfDice) {
 				name: "Test",
 				color: "Blue",
 			});
+			onDisconnect(playerRef).remove()
 		} else {
 		  // User is signed out
 		  // ...
